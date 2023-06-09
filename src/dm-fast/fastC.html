@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Title Start-->
+	<title>Katze Store</title>
+	<!-- Title End -->
+	<link rel="stylesheet" href="/assets/css/style.css" />
+
+</head>
+<body>
+	<!-- Navbar Start -->
+	<div>
+      <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <!-- Logo Start -->
+            <a href="/index.html" class="flex items-center"> <img src="/assets/img/logo.jpeg" class="h-8 mr-3 rounded-full" alt="Katze Logo"> <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">KatzeStore</span> </a>
+            <div class="flex md:order-2">
+               <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false"> <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                  </svg>
+               </button>
+            </div>
+            <!-- Logo End-->
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+               <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                  <li> <a href="/index.html" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Home</a> </li>
+                  <li>
+                     <!-- Dropdown Products -->
+                     <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Products
+                        <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                           <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                     </button>
+                     <div id="dropdownNavbar" class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                           <!-- Diamond Fast Start -->
+                           <li aria-labelledby="dropdownNavbarLink">
+                              <button id="doubleDropdownButtonFast" data-dropdown-toggle="doubleDropdownFast" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diamond Fast
+                                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                 </svg>
+                              </button>
+                              <div id="doubleDropdownFast" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButtonFast">
+                                    <li> <a href="./fastA.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Diamond Fast A</a> </li>
+                                    <li> <a href="./fastB.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Diamond Fast B</a> </li>
+                                    <li> <a href="./fastC.html" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Diamond Fast C</a> </li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <!-- Diamond Fast End-->
+                           <li> <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Diamond Via Login</a> </li>
+                           <li aria-labelledby="dropdownNavbarLink">
+                              <button id="doubleDropdownButtonItems" data-dropdown-toggle="doubleDropdownItems" data-dropdown-placement="right-start" type="button" class="flex items-center justify-between w-full px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Items
+                                 <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                                 </svg>
+                              </button>
+                              <div id="doubleDropdownItems" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="doubleDropdownButtonItems">
+                                    <li> <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Starlight</a> </li>
+                                    <li> <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Weekly Diamond Pass</a> </li>
+                                    <li> <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Gift Skin</a> </li>
+                                 </ul>
+                              </div>
+                           </li>
+                           <li> <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Account</a> </li>
+                        </ul>
+                        <div class="py-1"> <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-400 dark:hover:text-white">Sign out</a> </div>
+                     </div>
+                  </li>
+                  <li> <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a> </li>
+                  <li> <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a> </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+   </div>
+   <!-- Navbar End -->
+
+   <!-- Table Start Diamond Fast B -->
+   <div class="my-10">
+      <div class="relative shadow-md overflow-x-auto sm:rounded-lg">
+         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <caption class="p-5 text-lg font-semibold text-left text-gray-900 bg-white dark:text-white dark:bg-gray-800"> Diamond Fast C
+               <p class="mt-1 text-sm font-normal text-gray-500 dark:text-gray-400">
+                  Mau top up game dengan harga murah, proses cepat tapi tetap aman dan terpercaya? Hanya katze store yang bisa. Yuk cek pricelist nya !
+               </p>
+            </caption>
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+               <tr>
+                  <th scope="col" class="px-6 py-3"> Product name </th>
+                  <th scope="col" class="px-6 py-3"> Price </th>
+                  <th scope="col" class="px-6 py-3"> Category </th>
+                  <th scope="col" class="px-6 py-3"> Action</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 42 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 10.800 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 86 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 19.880 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 140 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 33.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 284 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 65.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 355 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 80.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 570 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 135.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 963 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 210.680 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 1412 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 305.080 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 2901 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 609.160 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 4026 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 886.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 4422  Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 982.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 5545  Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 1.219.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 6966  Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 1.524.500 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 7502 Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 1.565.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 9288  Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 1.896.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+               <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
+                  <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"> 12994  Diamonds </th>
+                  <td class="px-6 py-4 whitespace-nowrap"> Rp 2.852.000 </td>
+                  <td class="px-6 py-4 whitespace-nowrap">
+                     <span class="inline-flex items-center text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">
+                        <span class="w-2 h-2 mr-1 bg-white rounded-full"></span>
+                        Available
+                    </span>
+                  </td>
+                  <td class="px-6 py-4 whitespace-nowrap text-left ">
+							<button type="button" class="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2">
+								<svg aria-hidden="true" class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+								Buy now
+							  </button>
+						</td>
+               </tr>
+            </tbody>
+         </table>
+      </div>
+   </div>
+   <!-- Table Fast B End -->
+
+	<!-- Javascript Start -->
+	<script src="/assets/js/script.js"></script>
+	<!-- Javascript End -->
+</body>
+
+</html>
